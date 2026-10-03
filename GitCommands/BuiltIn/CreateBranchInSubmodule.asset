@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7399512b7ed0c4a4398af057c45334a6, type: 3}
+  m_Name: CreateBranchInSubmodule
+  m_EditorClassIdentifier: DreamfireSubmodules.Runtime::DreamfireSubmodules.Scripts.GitCommands.DreamfireGitCommandDefinition
+  commandId: create-branch
+  displayName: Create Branch
+  description: Creates the same new branch in every initialised submodule while preserving
+    staged, unstaged and untracked changes. The project root is not changed.
+  gitSubcommand: switch
+  defaultArguments:
+  - -c
+  acceptsAdditionalArguments: 1
+  additionalArgumentsLabel: New Branch Name
+  targetMode: 0
+  riskLevel: 2
+  requiresConfirmation: 0
+  requiresCleanWorkingTree: 0
+  timeoutSeconds: 120
+  refreshAssetDatabaseAfterSuccess: 0
